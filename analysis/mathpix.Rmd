@@ -1,3 +1,41 @@
-Mathpix 参考 [WeChat Article](https://mp.weixin.qq.com/s/PiBgI9HwCP3R20eMrJvSPw)
-*Convert images to LaTeX*
-latex 打公式的神器
+参考 @超模君2019 使用 Mathpix，并且配合 RMarkdown 包完成 Latex 显示。
+不需要安装任何其他非 RStudio 官方的包，直接就可以执行。
+
+```
+---
+author: Jiaxiang Li
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```
+
+定义下 Rmd 文档的 yaml 参数。
+
+![image](https://user-images.githubusercontent.com/15884785/62215461-99231880-b3d9-11e9-80bd-0c1f4e64c430.png)
+
+
+接下来试着输入一个 LaTex 和相关文本，用 mathpix 截图复制 Latex 代码，用`$$`框住即可。
+
+````
+接下来输入一个简单的一元一次方程 OLS 回归。
+
+$$y = \beta_0 + \beta_1 X + \mu$$
+````
+
+![image](https://user-images.githubusercontent.com/15884785/62215791-2bc3b780-b3da-11e9-9a7a-d20cf29b5d78.png)
+
+这里注意输入 `$$` 用于 Rmd 识别 Latex。
+
+然后我们测试 Latex 是否成功，选择 Knit
+
+![image](https://user-images.githubusercontent.com/15884785/62215919-67f71800-b3da-11e9-97b4-7b9ff4aa9584.png)
+
+
+查看生成的 HTML 文件，测试成功。
+
+![image](https://user-images.githubusercontent.com/15884785/62215968-7cd3ab80-b3da-11e9-8915-4aa77add7d95.png)
+
+
+![image](https://user-images.githubusercontent.com/15884785/62274536-a6d8ac80-b472-11e9-8a31-68fdfe9e09b4.png)
+

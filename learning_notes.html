@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>常用软件 使用笔记</title>
+  <meta name="description" content="常用软件 使用笔记" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="常用软件 使用笔记" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="常用软件 使用笔记" />
+  
+  
+  
+
+<meta name="author" content="李家翔" />
+
+
+<meta name="date" content="2019-12-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path=""><a href="#mathpix"><i class="fa fa-check"></i><b>1</b> MathPix</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#附录"><i class="fa fa-check"></i>附录</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#参考文献"><i class="fa fa-check"></i>参考文献</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">常用软件 使用笔记</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">常用软件 使用笔记</h1>
+<p class="author"><em>李家翔</em></p>
+<p class="date"><em>2019-12-09</em></p>
+</div>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<ol style="list-style-type: decimal">
+<li>使用 RMarkdown 的 <code>child</code> 参数，进行文档拼接。</li>
+<li>这样拼接以后的笔记方便复习。</li>
+<li>相关问题提交到
+<a class="github-button" href="https://github.com/JiaxiangBU/tutoring2/issues" data-show-count="true" aria-label="Issue JiaxiangBU/tutoring on GitHub">Issue</a></li>
+</ol>
+<div id="mathpix" class="section level1">
+<h1><span class="header-section-number">1</span> MathPix</h1>
+<p>参考 <span class="citation">超模君 (2019)</span> 使用 Mathpix，并且配合 RMarkdown 包完成 Latex 显示。
+不需要安装任何其他非 RStudio 官方的包，直接就可以执行。</p>
+<pre><code>---
+author: Jiaxiang Li
+date: &quot;2019-12-09&quot;
+output: html_document
+---
+</code></pre>
+<p>定义下 Rmd 文档的 yaml 参数。</p>
+<div class="figure">
+<img src="https://user-images.githubusercontent.com/15884785/62215461-99231880-b3d9-11e9-80bd-0c1f4e64c430.png" alt="image" />
+<p class="caption">image</p>
+</div>
+<p>接下来试着输入一个 LaTex 和相关文本，用 mathpix 截图复制 Latex 代码，用<code>$$</code>框住即可。</p>
+<pre><code>接下来输入一个简单的一元一次方程 OLS 回归。
+
+$$y = \beta_0 + \beta_1 X + \mu$$</code></pre>
+<div class="figure">
+<img src="https://user-images.githubusercontent.com/15884785/62215791-2bc3b780-b3da-11e9-9a7a-d20cf29b5d78.png" alt="image" />
+<p class="caption">image</p>
+</div>
+<p>这里注意输入 <code>$$</code> 用于 Rmd 识别 Latex。</p>
+<p>然后我们测试 Latex 是否成功，选择 Knit</p>
+<div class="figure">
+<img src="https://user-images.githubusercontent.com/15884785/62215919-67f71800-b3da-11e9-97b4-7b9ff4aa9584.png" alt="image" />
+<p class="caption">image</p>
+</div>
+<p>查看生成的 HTML 文件，测试成功。</p>
+<div class="figure">
+<img src="https://user-images.githubusercontent.com/15884785/62215968-7cd3ab80-b3da-11e9-8915-4aa77add7d95.png" alt="image" />
+<p class="caption">image</p>
+</div>
+<div class="figure">
+<img src="https://user-images.githubusercontent.com/15884785/62274536-a6d8ac80-b472-11e9-8a31-68fdfe9e09b4.png" alt="image" />
+<p class="caption">image</p>
+</div>
+</div>
+<div id="附录" class="section level1 unnumbered">
+<h1>附录</h1>
+</div>
+<div id="参考文献" class="section level1 unnumbered">
+<h1>参考文献</h1>
+<div id="refs" class="references">
+<div id="ref-超模君2019">
+<p>超模君. 2019. “收藏！本、硕、博、程序员必备神器.” 超级数学建模. 2019. <a href="https://mp.weixin.qq.com/s/PiBgI9HwCP3R20eMrJvSPw">https://mp.weixin.qq.com/s/PiBgI9HwCP3R20eMrJvSPw</a>.</p>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"search": false
+});
+});
+</script>
+
+</body>
+
+</html>
